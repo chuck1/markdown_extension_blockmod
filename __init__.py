@@ -9,12 +9,12 @@ class MyBlockParser(BlockProcessor):
 	RE = re.compile('^\?({.*})?\n')
 	
 	def test(self, parent, block):
-		#print 'test',repr(block)
+		print 'test',repr(block)
 		return bool(self.RE.search(block))
 		
 	def run(self, parent, blocks):
-		#print
-		#print 'run', repr(blocks)
+		print
+		print 'run', repr(blocks)
 		#print 'state', self.parser.state
 		
                 class_name = 'question'
